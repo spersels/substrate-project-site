@@ -1,0 +1,7 @@
+title: The Substrate Project
+description: A designed foundation for machine-authored software
+theme: jekyll-theme-primer
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled: true
