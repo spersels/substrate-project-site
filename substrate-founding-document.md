@@ -6,7 +6,7 @@ layout: default
 
 *A designed foundation for machine-authored software*
 
-**Status:** v0.8 — public edition
+**Status:** v0.9 — public edition
 **Date:** August 2026 · *The working repository retains the full document history and version files.*
 
 ---
@@ -81,6 +81,8 @@ The axiom guards against twin failure modes, and both must be named: the **accid
 **3.3 Stratified verification is the design, not a compromise.** The realistic equilibrium: a proof-carrying core (authorization, money movement, concurrency primitives, parsers), a vast empirically-validated periphery, and capability boundaries determining blast radius of the unverified mass. Cheap generation also makes *empirical* confidence cheap — N-version generation with massive property-based cross-checking is now economically viable and handles spec churn better than proof maintenance does.
 
 **3.4 Readability becomes projection.** Human-readable views must be **deterministic, verified projections** of the canonical structure (a proven pretty-printer), never LLM paraphrase — an inference-based translator duplicates the trust problem with correlated failures, and fails worst exactly on the off-distribution code where scrutiny matters most. The projection layer must also cover *runtime* behavior: traces and failures mapped back to spec-level terms (the source-level-debugger lesson from the compiler era). This is a forced move, not a preference: under machine authorship, readability is exiting the canonical artifact regardless (§8 — the three locks and the machine-efficiency drift); the verified projection layer is the only mechanism by which it survives at all.
+
+The stance, stated once: **unread is inevitable; unaccountable is a choice.** Reading-by-default ends with human authorship, and the project does not mourn it or resist it — reading was always a *proxy* for justified confidence, and a poor one (slow, non-composing, non-caching, empirically weak). What must survive is reading-**on-demand**: the regenerable, verified account, summonable at incident time. Machine authorship inverts the old economics — under human authorship, reading was cheap and evidence expensive; now evidence is cheap (the prover is free, §3.1) and reading becomes the scarce act, to be *spent* adversarially where it matters most (§3.5). The substrate's position against the "humans back in the loop" reflex follows directly: let the machines write everything, unread, at full speed — and make the evidence mandatory instead of the eyeballs. A toll gate manned by a sleepy guard resists throughput; a transponder requirement instruments it.
 
 **3.5 The human boundary.** Humans read a small, adversarially-selected fraction of code — the fraction implicated in incidents, exploits, audits. Trust compresses into a small trusted base that must be read with total rigor: the specs, the checker, the capability policy, and the projection function itself. The human role at incident time is a computationally weak verifier interrogating a powerful untrusted oracle: every AI-assistant claim must bottom out in something mechanically checkable (replayable traces, capability policy lookups). The irreducible human task is judgment about *intent* — whether the spec should have permitted what it provably permitted. Key operational metric: **mean time to understanding (MTTU)** — how fast a human under pressure gets from "something's wrong" to a correct spec-level account of why.
 

@@ -6,7 +6,7 @@ layout: default
 
 *Short by design. The ask is at the end, and it is not money or endorsement.*
 
-**Status:** v0.3 — public edition · August 2026 · Companion documents: *Root Cause: Unknown* (problem statement) and the *Founding Document* v0.8 (full argument)
+**Status:** v0.3 — public edition · August 2026 · Companion documents: *Root Cause: Unknown* (problem statement) and *The Substrate Project — Founding Document* (full argument; current version per the repository README)
 
 ---
 
